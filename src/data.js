@@ -7,7 +7,7 @@ export const profile = {
   email: "may.thakur47@gmail.com",
   phone: "+91 7347248475",
   linkedin: "https://www.linkedin.com/in/mayank-thakur-1a493397",
-  github: "", // add your GitHub URL here once you have one
+  github: "https://github.com/Mayank1282",
   resumeFile: "Mayank_Thakur_PHP_Laravel_Developer.pdf", // place this PDF in /public
   tagline: "I build the Laravel backends and REST APIs that web apps run on.",
   intro:

@@ -167,6 +167,9 @@ function Hero() {
         <div className="hero-cta">
           <a className="btn btn-primary" href={`mailto:${profile.email}`}>Email me</a>
           <a className="btn btn-ghost" href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight /></a>
+          {profile.github && (
+            <a className="btn btn-ghost" href={profile.github} target="_blank" rel="noreferrer">GitHub <ArrowUpRight /></a>
+          )}
           {profile.resumeFile && (
             <a className="btn btn-ghost" href={`/${profile.resumeFile}`} target="_blank" rel="noreferrer">Résumé <ArrowUpRight /></a>
           )}
@@ -404,6 +407,9 @@ function Contact() {
               {copied ? "✓ Copied!" : "Copy email"}
             </button>
             <a className="btn btn-line" href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight /></a>
+            {profile.github && (
+              <a className="btn btn-line" href={profile.github} target="_blank" rel="noreferrer">GitHub <ArrowUpRight /></a>
+            )}
           </div>
           <div className="contact-meta mono">
             <a href={`mailto:${profile.email}`}>{profile.email}</a>
