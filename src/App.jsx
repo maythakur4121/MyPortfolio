@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { profile, about, skills, experience, projects, education } from "./data.js";
+import { profile, about, skills, experience, projects, personalProjects, education } from "./data.js";
 
 /* ── Icons ─────────────────────────────────────────────────── */
 const ArrowUpRight = () => (
@@ -89,7 +89,7 @@ function useCounter(target, duration = 1200, active = false) {
 /* ── Nav ────────────────────────────────────────────────────── */
 const navLinks = [
   ["about", "About"], ["skills", "Skills"], ["experience", "Experience"],
-  ["projects", "Projects"], ["contact", "Contact"],
+  ["projects", "Projects"], ["personal", "Personal"], ["contact", "Contact"],
 ];
 
 function Nav({ dark, setDark }) {
@@ -313,6 +313,54 @@ function Projects() {
   );
 }
 
+/* ── Personal projects ──────────────────────────────────────── */
+function PersonalProjects() {
+  return (
+    <Section id="personal">
+      <div className="wrap">
+        <Route path="/personal" />
+        <h2 className="sec-title">Personal projects</h2>
+        <p className="pp-lede">
+          Full-stack applications built and deployed independently, each on a deliberately
+          different architecture and data store.
+        </p>
+        <div className="pp-list">
+          {personalProjects.map((p, i) => (
+            <article className="pp-card" key={p.name} style={{ "--delay": `${i * 90}ms` }}>
+              <div className="pp-head">
+                <div className="pp-head-left">
+                  <span className="pp-index mono">{String(i + 1).padStart(2, "0")}</span>
+                  <div>
+                    <h3>{p.name}</h3>
+                    <p className="pp-tagline">{p.tagline}</p>
+                  </div>
+                </div>
+                <div className="pp-head-right">
+                  <span className="pp-domain mono">{p.domain}</span>
+                  {p.url && (
+                    <a className="pp-visit" href={p.url} target="_blank" rel="noreferrer">
+                      Live <ArrowUpRight />
+                    </a>
+                  )}
+                </div>
+              </div>
+              <p className="pp-desc">{p.description}</p>
+              <ul className="pp-points">
+                {p.highlights.map((h, j) => (
+                  <li key={j} style={{ "--delay": `${j * 50}ms` }}>{h}</li>
+                ))}
+              </ul>
+              <div className="proj-tags">
+                {p.tech.map(t => <span className="proj-tag mono" key={t}>{t}</span>)}
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </Section>
+  );
+}
+
 /* ── Education ──────────────────────────────────────────────── */
 function Education() {
   return (
@@ -406,6 +454,7 @@ export default function App() {
         <Skills />
         <Experience />
         <Projects />
+        <PersonalProjects />
         <Education />
         <Contact />
       </main>

@@ -301,6 +301,49 @@ section { padding: clamp(56px,9vw,96px) 0; border-bottom: 1px solid var(--line);
 .proj-tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .proj-tag { font-size: 11.5px; color: var(--muted); background: var(--paper); border: 1px solid var(--line); padding: 4px 9px; border-radius: 6px; }
 
+/* ── Personal projects ──────────────────────────────────────── */
+.pp-lede { font-size: 16px; color: var(--ink-soft); max-width: 640px; margin: -20px 0 32px; }
+.pp-list { display: flex; flex-direction: column; gap: 18px; }
+.pp-card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 28px;
+  transition: border-color 0.2s, box-shadow 0.22s, transform 0.2s;
+  animation: popIn 0.45s var(--delay, 0ms) ease both;
+}
+.pp-card:hover { border-color: var(--accent); box-shadow: var(--shadow); transform: translateY(-3px); }
+.pp-head {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: 20px; flex-wrap: wrap; margin-bottom: 16px;
+}
+.pp-head-left { display: flex; align-items: flex-start; gap: 14px; }
+.pp-index {
+  font-size: 12px; color: var(--accent); font-weight: 500;
+  border: 1px solid var(--line); background: var(--paper);
+  border-radius: 8px; padding: 5px 9px; margin-top: 3px; flex-shrink: 0;
+}
+.pp-card h3 {
+  font-family: "Space Grotesk", sans-serif; font-size: 21px;
+  font-weight: 700; letter-spacing: -0.018em; line-height: 1.25;
+}
+.pp-tagline { font-size: 14px; color: var(--muted); margin-top: 3px; }
+.pp-head-right { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+.pp-domain {
+  font-size: 11.5px; color: var(--muted); background: var(--paper);
+  border: 1px solid var(--line); padding: 4px 10px; border-radius: 999px;
+  white-space: nowrap;
+}
+.pp-visit {
+  font-size: 13px; font-weight: 600; color: #fff; background: var(--accent);
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 16px; border-radius: 999px;
+  transition: background 0.18s, transform 0.12s;
+}
+.pp-visit:hover { background: var(--accent-ink); transform: translateY(-1px); }
+.pp-desc { font-size: 15px; color: var(--ink-soft); max-width: 78ch; margin-bottom: 18px; }
+.pp-points { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+.pp-points li { position: relative; padding-left: 20px; font-size: 14px; color: var(--ink-soft); }
+.pp-points li::before { content: "→"; position: absolute; left: 0; color: var(--accent); font-size: 13px; }
+
 /* ── Education ──────────────────────────────────────────────── */
 .edu { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 22px 0; border-top: 1px solid var(--line); transition: background 0.18s; }
 .edu:first-of-type { border-top: 0; }
@@ -360,6 +403,10 @@ section { padding: clamp(56px,9vw,96px) 0; border-bottom: 1px solid var(--line);
   .stat { min-width: 50%; border-bottom: 1px solid var(--line); }
   .proj-grid { grid-template-columns: 1fr; }
   .edu { flex-direction: column; gap: 6px; }
+  .pp-card { padding: 22px 18px; }
+  .pp-head { gap: 14px; }
+  .pp-head-right { width: 100%; justify-content: space-between; }
+  .pp-visit { min-height: 44px; }
   .scroll-top { bottom: 16px; right: 16px; }
 }
 

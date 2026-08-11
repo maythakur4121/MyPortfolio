@@ -119,6 +119,71 @@ export const projects = [
   },
 ];
 
+export const personalProjects = [
+  {
+    name: "Employee Management System",
+    tagline: "Role-based HR platform",
+    domain: "Human Resources",
+    url: "https://mayank-ems-laravel-react.vercel.app/login",
+    description:
+      "An internal HR tool for managing departments, employees, and organisational activity. A React single-page application consumes a Laravel REST API secured with token authentication, with administrator and employee roles resolved through route middleware.",
+    highlights: [
+      "Department and employee CRUD with automatic user provisioning and generated employee codes",
+      "Administrator dashboard with headcount charts, employment-type breakdown, and a recent activity feed",
+      "Activity logging across every write operation for a complete audit trail",
+      "Business logic isolated in a service layer, with form requests for validation and API resources for response shaping",
+    ],
+    tech: ["Laravel", "PHP 8", "React.js", "Sanctum", "MySQL", "Tailwind CSS", "Recharts", "Vite"],
+  },
+  {
+    name: "Nova — AI Customer Support Chatbot",
+    tagline: "AI helpdesk with conversation history",
+    domain: "AI / Customer Support",
+    url: "https://ai-chatbot-gilt-pi-35.vercel.app/",
+    description:
+      "A support chat platform where users open sessions with an AI assistant and revisit past conversations. An Express API sits between the client and the Gemini model, holding the API key server-side and forwarding the user's token so database policies still apply.",
+    highlights: [
+      "Google Gemini responses served through an Express layer, never exposing the key to the browser",
+      "Email and Google OAuth authentication, with row-level security restricting every query to its owner",
+      "Live session list kept in sync through Postgres change subscriptions",
+      "Per-session system prompts and a usage dashboard covering sessions, messages, and prompt-to-reply ratio",
+    ],
+    tech: ["Express.js", "Node.js", "React.js", "Supabase", "PostgreSQL", "Gemini API", "Tailwind CSS", "Vite"],
+  },
+  {
+    name: "Slotwise — Booking & Payment Platform",
+    tagline: "Service marketplace with split payments",
+    domain: "Marketplace / Payments",
+    url: "https://booking-platform-rosy.vercel.app/",
+    description:
+      "A two-sided marketplace where providers publish services and manage availability while clients book and pay for appointments. The payment layer splits a single charge between provider, platform commission, and processing costs, and reverses it correctly on refund.",
+    highlights: [
+      "Three-way payment split computed in integer minor units, so provider share, commission, and fees reconcile exactly",
+      "Dual gateway support with gateway-aware refunds and transfer reversals that account for fees already deducted",
+      "Signature-verified, replay-safe webhooks; cancellation and refund committed as a single atomic transaction",
+      "Row-level locking on slot selection so concurrent requests for one slot produce exactly one booking",
+      "Booking lifecycle with email notifications, reviews, map-based service discovery, and an administrative console",
+    ],
+    tech: ["Laravel", "PHP 8", "React.js", "Sanctum", "MySQL", "Stripe", "Razorpay", "Leaflet", "Three.js"],
+  },
+  {
+    name: "Ledger — Personal Expense Tracker",
+    tagline: "Monolithic Laravel and Inertia finance tracker",
+    domain: "Personal Finance",
+    url: "https://ledger-x3ve.onrender.com/",
+    description:
+      "A personal finance tracker built as a single Laravel application rendering React through Inertia.js — server-driven routing with no REST layer and no CORS configuration. Transactions are stored as documents in MongoDB through Eloquent-compatible models.",
+    highlights: [
+      "Inertia.js server-side routing with React as the view layer, page components loaded as separate chunks",
+      "Every amount held as an integer number of paise and parsed once at the boundary, so totals never drift",
+      "Built-in EMI calculator producing a full month-by-month amortisation schedule that closes at exactly zero",
+      "Monthly category breakdowns, filtering by period, type and category, and a formula-safe CSV export",
+      "91 automated tests across PHP and JavaScript covering money handling, filters, authentication, and reporting",
+    ],
+    tech: ["Laravel", "PHP 8", "Inertia.js", "React.js", "MongoDB", "Tailwind CSS", "Recharts", "Vite"],
+  },
+];
+
 export const education = [
   {
     degree: "Master of Computer Applications (MCA), Computer Science",
