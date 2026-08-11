@@ -95,23 +95,19 @@
   <p>
     PHP and Laravel Developer with 4+ years of experience building web applications and REST APIs using Laravel,
     PHP 8, MySQL, and React.js. Comfortable across the full request lifecycle in Laravel — routing, controllers,
-    middleware, Eloquent ORM, and Blade — and experienced with Stripe and Razorpay payment integration, multi-role
-    platforms, and MySQL query optimization. Also build Node.js and Express services, Inertia.js monoliths, and
-    AI-integrated applications on PostgreSQL and MongoDB. Work in agile teams using Git and CI/CD.
+    middleware, Eloquent ORM, and Blade — and experienced with Stripe payment integration, multi-role platforms,
+    and MySQL query optimization. Work in agile teams using Git and CI/CD.
   </p>
 
   <h2>Technical Skills</h2>
   <div>
-    <div class="skill"><b>Languages:</b> PHP 8, JavaScript, TypeScript, Node.js</div>
-    <div class="skill"><b>Frameworks:</b> Laravel, CodeIgniter, Express.js, React.js, Inertia.js</div>
+    <div class="skill"><b>Languages:</b> PHP 8, JavaScript, TypeScript</div>
+    <div class="skill"><b>Frameworks:</b> Laravel, CodeIgniter, React.js</div>
     <div class="skill"><b>Laravel:</b> Eloquent ORM, Blade, Routing, Middleware, Migrations &amp; Seeders, Service Classes, MVC, OOP</div>
-    <div class="skill"><b>Databases:</b> MySQL, PostgreSQL, MongoDB (query optimization, indexing, schema design, migrations)</div>
-    <div class="skill"><b>APIs &amp; Auth:</b> REST API development, JWT / token-based authentication, Laravel Sanctum, OAuth 2.0, webhooks, Axios</div>
-    <div class="skill"><b>Payments &amp; Integrations:</b> Stripe, Razorpay, Supabase, Google Maps API, Leaflet / OpenStreetMap, transactional email (SMTP)</div>
-    <div class="skill"><b>AI Engineering:</b> Google Gemini API, Claude, ChatGPT, Cursor, GitHub Copilot, prompt engineering</div>
-    <div class="skill"><b>Frontend:</b> HTML5, CSS3, Bootstrap, Tailwind CSS, jQuery, Vite</div>
-    <div class="skill"><b>Testing:</b> PHPUnit, Pest, Vitest</div>
-    <div class="skill"><b>Tools:</b> Git, GitHub, Docker, Composer, Postman, phpMyAdmin, Linux, VS Code, CI/CD</div>
+    <div class="skill"><b>Databases:</b> MySQL (query optimization, indexing, schema design, migrations)</div>
+    <div class="skill"><b>APIs &amp; Auth:</b> REST API development, JWT / token-based authentication, Stripe Payment Gateway, Google Maps API, Axios</div>
+    <div class="skill"><b>Frontend:</b> HTML5, CSS3, Bootstrap, Tailwind CSS, jQuery</div>
+    <div class="skill"><b>Tools:</b> Git, GitHub, Composer, Postman, phpMyAdmin, Linux, VS Code, CI/CD</div>
   </div>
 
   <h2>Work Experience</h2>
@@ -152,61 +148,7 @@
     </ul>
   </div>
 
-  <h2>Personal Projects</h2>
-  <p class="lede">Full-stack applications built and deployed independently, each on a different architecture and data store.</p>
-
-  <div class="proj">
-    <div>
-      <span class="proj-name">Slotwise — Booking &amp; Payment Platform</span>
-      <span class="proj-url">(<a href="https://booking-platform-rosy.vercel.app/">booking-platform-rosy.vercel.app</a>)</span>
-      — <span class="proj-stack">Laravel, React.js, MySQL, Stripe, Razorpay, Leaflet</span>
-    </div>
-    <div class="proj-desc">
-      Two-sided service marketplace splitting each charge between provider, platform commission, and processing fees
-      in integer minor units, with gateway-aware refunds, signature-verified idempotent webhooks, and row-level
-      locking so concurrent requests for one slot produce exactly one booking.
-    </div>
-  </div>
-
-  <div class="proj">
-    <div>
-      <span class="proj-name">Ledger — Personal Expense Tracker</span>
-      <span class="proj-url">(<a href="https://ledger-x3ve.onrender.com/">ledger-x3ve.onrender.com</a>)</span>
-      — <span class="proj-stack">Laravel, Inertia.js, React.js, MongoDB, Docker</span>
-    </div>
-    <div class="proj-desc">
-      Monolithic finance tracker using Inertia.js server-side routing with React as the view layer — no REST layer and
-      no CORS. Amounts stored as integer paise, a built-in EMI calculator with full amortisation schedule, and 91
-      automated tests across PHPUnit and Vitest.
-    </div>
-  </div>
-
-  <div class="proj">
-    <div>
-      <span class="proj-name">Nova — AI Customer Support Chatbot</span>
-      <span class="proj-url">(<a href="https://ai-chatbot-gilt-pi-35.vercel.app/">ai-chatbot-gilt-pi-35.vercel.app</a>)</span>
-      — <span class="proj-stack">Express.js, Node.js, React.js, Supabase, PostgreSQL, Gemini API</span>
-    </div>
-    <div class="proj-desc">
-      AI helpdesk where an Express service layer holds the Gemini API key server-side and forwards the user token so
-      row-level security still applies. Email and Google OAuth sign-in, live session list over Postgres change
-      subscriptions, and a usage dashboard.
-    </div>
-  </div>
-
-  <div class="proj">
-    <div>
-      <span class="proj-name">Employee Management System</span>
-      <span class="proj-url">(<a href="https://mayank-ems-laravel-react.vercel.app/login">mayank-ems-laravel-react.vercel.app</a>)</span>
-      — <span class="proj-stack">Laravel, React.js, MySQL, Sanctum</span>
-    </div>
-    <div class="proj-desc">
-      Role-based HR platform with department and employee CRUD, automatic user provisioning, generated employee codes,
-      an admin dashboard with headcount charts, and activity logging across every write for a complete audit trail.
-    </div>
-  </div>
-
-  <h2>Professional Projects</h2>
+  <h2>Key Projects</h2>
 
   <div class="proj">
     <div>
@@ -233,6 +175,14 @@
       — <span class="proj-stack">Laravel, REST APIs, MySQL</span>
     </div>
     <div class="proj-desc">Device plan management platform with plan creation, reviews, an admin panel, and REST APIs for mobile integration.</div>
+  </div>
+
+  <div class="proj">
+    <div>
+      <span class="proj-name">Employee Management System</span>
+      — <span class="proj-stack">Laravel, React.js, MySQL, JWT</span>
+    </div>
+    <div class="proj-desc">Full-stack EMS managing employee records, salaries, and leaves with JWT-secured REST APIs and a React.js frontend.</div>
   </div>
 
   <div class="proj">
