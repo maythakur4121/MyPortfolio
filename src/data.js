@@ -24,13 +24,16 @@ export const about =
   "I'm a PHP and Laravel developer with 4+ years of experience building web applications and REST APIs. I'm comfortable across the full request lifecycle in Laravel — routing, controllers, middleware, Eloquent ORM, and Blade — and I've worked on Stripe payment integration, multi-role platforms, and MySQL query optimization. I work in agile teams using Git and CI/CD, and I care about writing code that the next developer can actually read.";
 
 export const skills = [
-  { group: "Languages", items: ["PHP 8", "JavaScript", "TypeScript"] },
-  { group: "Backend", items: ["Laravel", "CodeIgniter"] },
-  { group: "Frontend", items: ["React.js", "Tailwind CSS", "Bootstrap", "jQuery", "HTML5", "CSS3"] },
+  { group: "Languages", items: ["PHP 8", "JavaScript", "TypeScript", "Node.js"] },
+  { group: "Backend", items: ["Laravel", "Express.js", "Inertia.js", "CodeIgniter"] },
+  { group: "Frontend", items: ["React.js", "Tailwind CSS", "Vite", "Recharts", "Bootstrap", "jQuery", "HTML5", "CSS3"] },
   { group: "Laravel", items: ["Eloquent ORM", "Blade", "Middleware", "Migrations & Seeders", "Service Classes", "MVC", "OOP"] },
-  { group: "Databases", items: ["MySQL", "Query optimization", "Indexing", "Schema design"] },
-  { group: "APIs & Auth", items: ["REST APIs", "JWT Auth", "Stripe", "Google Maps API", "Axios", "Postman"] },
-  { group: "Tools", items: ["Git", "GitHub", "Composer", "Linux", "VS Code", "CI/CD"] },
+  { group: "Databases", items: ["MySQL", "PostgreSQL", "MongoDB", "Query optimization", "Indexing", "Schema design"] },
+  { group: "APIs & Auth", items: ["REST APIs", "JWT Auth", "Laravel Sanctum", "OAuth 2.0", "Webhooks", "Axios", "Postman"] },
+  { group: "Payments & Integrations", items: ["Stripe", "Razorpay", "Supabase", "Google Maps API", "Leaflet / OpenStreetMap", "SMTP / Transactional email"] },
+  { group: "AI Engineering", items: ["Google Gemini API", "Claude", "ChatGPT", "Cursor", "GitHub Copilot", "Prompt engineering"] },
+  { group: "Testing", items: ["PHPUnit", "Pest", "Vitest", "Feature & unit testing"] },
+  { group: "Tools & DevOps", items: ["Git", "GitHub", "Docker", "Composer", "npm", "Vercel", "Render", "Linux", "VS Code", "CI/CD"] },
 ];
 
 export const experience = [
