@@ -10,6 +10,7 @@ export const profile = {
   github: "https://github.com/Mayank1282",
   resumes: [
     { label: "Résumé", file: "Mayank_Thakur_PHP_Laravel_Developer.pdf" },
+    { label: "Full-Stack Résumé", file: "Mayank_Thakur_Full_Stack_Developer.pdf" },
   ],
   tagline: "I build the Laravel backends and REST APIs that web apps run on.",
   intro:
