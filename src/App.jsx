@@ -170,9 +170,11 @@ function Hero() {
           {profile.github && (
             <a className="btn btn-ghost" href={profile.github} target="_blank" rel="noreferrer">GitHub <ArrowUpRight /></a>
           )}
-          {profile.resumeFile && (
-            <a className="btn btn-ghost" href={`/${profile.resumeFile}`} target="_blank" rel="noreferrer">Résumé <ArrowUpRight /></a>
-          )}
+          {profile.resumes.map(r => (
+            <a className="btn btn-ghost" key={r.file} href={`/${r.file}`} target="_blank" rel="noreferrer">
+              {r.label} <ArrowUpRight />
+            </a>
+          ))}
         </div>
         <div className="hero-stats" ref={statsRef}>
           {profile.stats.map((s) => (

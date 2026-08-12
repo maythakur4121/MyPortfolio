@@ -8,7 +8,10 @@ export const profile = {
   phone: "+91 7347248475",
   linkedin: "https://www.linkedin.com/in/mayank-thakur-1a493397",
   github: "https://github.com/Mayank1282",
-  resumeFile: "Mayank_Thakur_PHP_Laravel_Developer.pdf", // place this PDF in /public
+  resumes: [
+    { label: "Résumé", file: "Mayank_Thakur_PHP_Laravel_Developer.pdf" },
+    { label: "Full-Stack Résumé", file: "Mayank_Thakur_Full_Stack_Developer.pdf" },
+  ],
   tagline: "I build the Laravel backends and REST APIs that web apps run on.",
   intro:
     "Backend-focused full-stack developer with 4+ years building web applications, payment integrations, and multi-role platforms with Laravel, MySQL, and React.",
