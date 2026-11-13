@@ -43,7 +43,7 @@ export const experience = [
     role: "Software Developer",
     company: "SoftRadix Technologies",
     location: "Mohali",
-    period: "Jan 2025 – Present",
+    period: "Jan 2025 – July 2026",
     points: [
       "Built web applications and REST APIs using Laravel, Eloquent ORM, and React.js for platforms serving multiple user roles.",
       "Developed REST APIs consumed by React (Axios) frontends and mobile apps, secured with JWT-based authentication.",
@@ -57,7 +57,7 @@ export const experience = [
     role: "Software Developer",
     company: "RV Technologies",
     location: "Mohali",
-    period: "Feb 2022 – March 2024",
+    period: "Feb 2022 – July 2023",
     points: [
       "Developed and maintained Laravel web applications with JavaScript and jQuery.",
       "Built REST APIs supporting frontend integration and data processing.",
@@ -70,7 +70,7 @@ export const experience = [
     role: "Web Developer",
     company: "Rankers Media (Palabras Pvt Ltd)",
     location: "Mohali",
-    period: "Feb 2020 – July 2021",
+    period: "Feb 2020 – Oct 2021",
     points: [
       "Built backend modules and APIs using PHP and CodeIgniter for the Class Rankers ed-tech platform.",
       "Designed and optimized MySQL schemas to improve data retrieval speed.",
